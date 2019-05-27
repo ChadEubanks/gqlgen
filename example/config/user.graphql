@@ -1,4 +1,5 @@
-type User {
+type User
+@bind(model:"github.com/99designs/gqlgen/example/config.User") {
   id: ID!
-  name: String!
+  name: String! @field(name:"FullName")
 }
